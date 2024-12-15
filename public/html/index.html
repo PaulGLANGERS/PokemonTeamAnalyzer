@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>PTA</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="../images/icon5.png" type="image/x-icon">
+    <link rel='stylesheet' type='text/css' media='screen' href='../css/main.css'>
+</head>
+<body>
+    <h1 id="siteTitle" style="margin-bottom: 4%;">Pokemon Team Analyzer</h1>
+    <select class="dropdown2" id="teamsDD" style="margin-left: 2%;"></select>
+
+    <div style="display: flex; margin-left: 2%;">
+        <h2>Votre équipe aura du mal contre :</h2>
+    </div>
+    <div id = "typesWeakness" style="display: flex; flex-wrap: wrap;">
+        <div id = "typeNormalW" style="display: none; align-items: center;  margin-left: 2%;">
+            <img src="../images/normal.png"> 
+            <h4 id="normaltextW" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeFeuW" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/fire.png"> 
+            <h4 id="feutextW" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeEauW" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/water.png"> 
+            <h4 id="watertextW" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typePlanteW" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/grass.png"> 
+            <h4 id="plantetextW" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeElecW" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/elec.png"> 
+            <h4 id="electextW" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeSolW" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/ground.png"> 
+            <h4 id="soltextW" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeRocheW" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/rock.png"> 
+            <h4 id="rochetextW" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeAcierW" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/steel.png"> 
+            <h4 id="aciertextW" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeCombatW" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/fight.png"> 
+            <h4 id="combattextW" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typePsyW" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/psychic.png"> 
+            <h4 id="psytextW" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeSpectreW" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/ghost.png"> 
+            <h4 id="spectretextW" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeTenebresW" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/dark.png"> 
+            <h4 id="tenebrestextW" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeVolW" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/fly.png"> 
+            <h4 id="voltextW" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeInsecteW" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/bug.png"> 
+            <h4 id="insectetextW" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typePoisonW" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/poison.png"> 
+            <h4 id="poisontextW" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeIceW" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/ice.png"> 
+            <h4 id="icetextW" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeDragonW" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/dragon.png"> 
+            <h4 id="dragontextW" style="margin-left: 5px;">x1</h4>
+        </div>
+    </div>
+    <div style="display: flex; margin-left: 2%;">
+        <h2>Votre équipe sera à l'aise contre :</h2>
+    </div>
+    <div id = "typesStrength" style="display: flex; flex-wrap: wrap;">
+        <div id = "typeNormalS" style="display: none; align-items: center;  margin-left: 2%;">
+            <img src="../images/normal.png"> 
+            <h4 id="normaltextS" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeFeuS" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/fire.png"> 
+            <h4 id="feutextS" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeEauS" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/water.png"> 
+            <h4 id="watertextS" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typePlanteS" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/grass.png"> 
+            <h4 id="plantetextS" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeElecS" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/elec.png"> 
+            <h4 id="electextS" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeSolS" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/ground.png"> 
+            <h4 id="soltextS" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeRocheS" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/rock.png"> 
+            <h4 id="rochetextS" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeAcierS" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/steel.png"> 
+            <h4 id="aciertextS" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeCombatS" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/fight.png"> 
+            <h4 id="combattextS" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typePsyS" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/psychic.png"> 
+            <h4 id="psytextS" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeSpectreS" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/ghost.png"> 
+            <h4 id="spectretextS" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeTenebresS" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/dark.png"> 
+            <h4 id="tenebrestextS" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeVolS" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/fly.png"> 
+            <h4 id="voltextS" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeInsecteS" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/bug.png"> 
+            <h4 id="insectetextS" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typePoisonS" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/poison.png"> 
+            <h4 id="poisontextS" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeIceS" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/ice.png"> 
+            <h4 id="icetextS" style="margin-left: 5px;">x1</h4>
+        </div>
+        <div id = "typeDragonS" style="display: none; align-items: center; margin-left: 2%;">
+            <img src="../images/dragon.png"> 
+            <h4 id="dragontextS" style="margin-left: 5px;">x1</h4>
+        </div>
+    </div>
+    <script type="module" src='../js/app.js'></script>
+    <div class="container">
+        <!-- Les 6 divs -->
+        <div class="box">
+            <select class="dropdown" id="pok0DD"></select>
+            <img src="../images/pokemons/0.png" id="pok0img">
+            <div class="sub-images">
+                <img src="../images/none.png" id="pok0type1">
+                <img src="../images/none.png" id="pok0type2">
+            </div>
+            <h5 id="pok0Stats">Statistiques : 0</h5>
+        </div>
+        <div class="box">
+            <select class="dropdown" id="pok1DD"></select>
+            <img src="../images/pokemons/0.png" id="pok1img">
+            <div class="sub-images">
+                <img src="../images/none.png" id="pok1type1">
+                <img src="../images/none.png" id="pok1type2">
+            </div>
+            <h5 id="pok1Stats">Statistiques : 0</h5>
+        </div>
+        <div class="box">
+            <select class="dropdown" id="pok2DD"></select>
+            <img src="../images/pokemons/0.png" id="pok2img">
+            <div class="sub-images">
+                <img src="../images/none.png" id="pok2type1">
+                <img src="../images/none.png" id="pok2type2">
+            </div>
+            <h5 id="pok2Stats">Statistiques : 0</h5>
+        </div>
+        <div class="box">
+            <select class="dropdown" id="pok3DD"></select>
+            <img src="../images/pokemons/0.png" id="pok3img">
+            <div class="sub-images">
+                <img src="../images/none.png" id="pok3type1">
+                <img src="../images/none.png" id="pok3type2">
+            </div>
+            <h5 id="pok3Stats">Statistiques : 0</h5>
+        </div>
+        <div class="box">
+            <select class="dropdown" id="pok4DD"></select>
+            <img src="../images/pokemons/0.png" id="pok4img">
+            <div class="sub-images">
+                <img src="../images/none.png" id="pok4type1">
+                <img src="../images/none.png" id="pok4type2">
+            </div>
+            <h5 id="pok4Stats">Statistiques : 0</h5>
+        </div>
+        <div class="box">
+            <select class="dropdown" id="pok5DD"></select>
+            <img src="../images/pokemons/0.png" id="pok5img">
+            <div class="sub-images">
+                <img src="../images/none.png" id="pok5type1">
+                <img src="../images/none.png" id="pok5type2">
+            </div>
+            <h5 id="pok5Stats">Statistiques : 0</h5>
+        </div>
+    </div>
+    <div class="button-container">
+        <button class="saveButton" id="saveButton">Enregistrer</button>
+    </div>
+    <div id="popup" class="popup hidden">
+        <h3>Modifier l'information</h3>
+        <input type="text" id="popupInput" placeholder="Nom de l'équipe" />
+        <button id="popupSubmitButton">Valider</button>
+    </div>
+
+
+</body>
+</html>

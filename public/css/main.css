@@ -1,0 +1,228 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Style des titres */
+h1, h2, h3, h5, h6 {
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Liens */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Conteneur principal pour répartir les 6 divs */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+/* Chaque div individuelle */
+.box {
+    flex: 1 1 calc(33.33% - 40px); /* Occupe environ 1/3 de la largeur avec des marges */
+    max-width: calc(33.33% - 40px); /* Assure une largeur maximale */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Image principale */
+.box img {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Sous-images côte à côte */
+.sub-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.sub-images img {
+    max-width: 45%; /* Chaque sous-image occupe environ 45% de la largeur de leur conteneur */
+    height: auto;
+    border-radius: 4px;
+}
+
+.dropdown2 {
+    width: 35%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Petit titre */
+h5 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Boutons */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Images */
+img {
+    height: auto;
+
+}
+
+/* Flexbox exemple */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.flex-item {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+    z-index: 1000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    width: 300px;
+}
+
+/* Affiche le popup */
+.popup.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Input dans le popup */
+#popupInput {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Bouton dans le popup */
+#popupSubmitButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#popupSubmitButton:hover {
+    background-color: #218838;
+}
+
+/* Masquer le popup */
+.hidden {
+    display: none;
+}
+
+
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+/* Bouton stylisé */
+.saveButton {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Effet hover pour le bouton */
+.saveButton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Effet actif */
+.saveButton:active {
+    background-color: #004085;
+    transform: scale(1);
+}
